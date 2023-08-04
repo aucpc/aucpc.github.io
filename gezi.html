@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AmongUs中文玩家委员会 -首页</title>
+<style>
+.header {
+    text-align: center;
+}    
+.logo{
+    text-align: center;
+}
+* {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            max-width: 1920px;
+        }
+        
+        #btn {
+            border-radius: 10px 10px 10px 10px;
+            border: 1px solid #48b6ff;
+            box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.3);
+            position: absolute;
+            top: 22%;
+            left: 298px;
+            height: 75px;
+            width: 40px;
+            border: 0;
+            border-left: 1px solid rgba(0, 204, 255, 0.2);
+            background: #48b6ff;
+            color: #ffffff;
+            cursor: pointer;
+        }
+        
+        .box {
+            background-color:#cccccc;
+            border: 1px solid #6d6d6d;
+            box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.3);
+            float: left;
+            position: relative;
+            left: 0;
+            height: 1000px;
+            width: 300px;
+            margin-left: 0;
+            display: block;
+            background-color: #f5f5f5;
+            -moz-transition: margin-left 2s;
+            transition: margin-left 2s;
+        }
+        
+        aside ul li {
+            height: 40px;
+            line-height: 40px;
+            border-top: 1px solid #fff;
+            border-bottom: 1px solid #222222;
+            list-style-type: none;
+            text-align: center;
+        }
+        
+        aside ul li a {
+
+            width: 100%;
+            height: 100%;
+            text-decoration-line: none;
+            color: #555555;
+            display: block;
+        }
+        
+        aside ul li a:hover {
+
+            background: #d8d8d8;
+        }
+        
+        section {
+            width: 100%;
+            height: 100%;
+            height: 1000px;
+        }
+        
+        section h1 {
+            text-align: center;
+            border-bottom: 1px solid #fff;
+        }
+        body {
+            background-color: aliceblue;
+            background-size:100% 100%;
+            background-repeat:no-repeat;
+        }
+</style>
+</head>
+<body>
+    <div class="header">
+        <aside class="box" id="test">
+            <button id="btn">收展</button>
+            <ul>
+                <li>
+                    <h3>菜单</h3>
+                </li>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="gezi.html">作品</a></li>
+                <li><a href="about.html">关于</a></li>
+                <li><a href="gezi.html">入坑</a></li>
+                <a href="https://www.bilibili.com/video/BV1B14y1z7BJ" target="_blank" rel="noopener noreferrer"><img src="image/bilibili.png" alt="some_text" style="float: left;position: relative;left: 0;border-radius: 10px 10px 10px 10px;background-color:#f5f5f5;border: 1px solid #cacaca;box-shadow: 0 0 7px 2px rgba(236, 236, 236, 0.3);"></a>
+            </ul>
+        </aside>
+        <section>
+            <ul>
+            </ul>
+            <div class="logo" style="background-color: #d8d8d8;border: 1px solid #d8d8d8;box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.3);height:950px;width: 1300px;background-color: #cccccc;background-position: right;">
+                <img src="image/realikun.jpg" alt="some_text" style="border-radius: 10px 10px 10px 10px;border: 0.01px solid #f5f5f5;box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.3);height: 640px;width: 800px;">
+                <h1 style="border-style: none;">前方施工（鸽子）</h1> 
+            </div>
+        </section>
+    </div>    
+<script>
+        var box = document.getElementById("test")
+        var btn = document.getElementById("btn")
+        btn.onclick = function() {
+            if (box.offsetLeft == 0) {
+                box.style['margin-left'] = -300 + "px"
+            } else {
+                box.style['margin-left'] = 0 + "px"
+            }
+        }    
+</script> 
+</body>
+</html>
